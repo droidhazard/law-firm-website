@@ -15,6 +15,7 @@
   border: 0;
   box-sizing: border-box;
   font-family: 'Merriweather', 'Times New Roman', Times, serif;
+  transition: all 0.2s ease-out;
 }
 
 html,
@@ -38,37 +39,73 @@ body {
   justify-content: center;
 }
 
-.hero-section h2 {
+h2 {
   color: var(--accent-main);
   font-family: 'Merriweather', 'Times New Roman', Times, serif;
   font-size: 2rem;
 }
 
-.hero-section h1 {
+h1 {
   color: #fff;
   font-family: 'Merriweather', 'Times New Roman', Times, serif;
   font-size: 3rem;
 }
 
-.hero-section p {
+.text {
   color: #fff;
   font-family: 'Merriweather', 'Times New Roman', Times, serif;
   font-size: 1rem;
+  line-height: 1.5;
 }
 
-.hero-section button {
+.text-white {
+  color: #fff;
+}
+
+.text-thin {
+  font-weight: 300;
+}
+
+.button {
   padding: 15px 60px;
   font-size: 1.1rem;
   margin: 3rem 0;
   border: 1px solid #000;
   cursor: pointer;
-  background-color: var(--accent-main);
   color: #fff;
   transition: all 0.2s ease-in-out;
 }
-.hero-section button:hover {
+
+.bg-accent {
+  background-color: var(--accent-main);
+}
+
+.button:hover {
   background-color: #fff;
   color: var(--accent-main);
+}
+
+/* CTA SECTION */
+.cta-section {
+  background-color: #1b263b;
+  padding: 20px 0;
+  line-height: 2;
+}
+
+.cta-section-wrapper {
+  margin: 0 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-section-wrapper .col:nth-child(1) {
+  width: 70%;
+}
+
+.cta-section-wrapper .col:nth-child(2) {
+  width: 30%;
 }
 
 
@@ -82,8 +119,28 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-    text-shadow: 3px 0px 7px rgba(11, 10, 5, 0.8), 
-	  -3px 0px 7px rgba(19, 17, 11, 0.8), 
-	  0px 4px 7px rgba(29, 25, 12, 0.8);
+    text-shadow: 3px 0px 7px rgba(11, 10, 5, 0.8),
+      -3px 0px 7px rgba(19, 17, 11, 0.8),
+      0px 4px 7px rgba(29, 25, 12, 0.8);
+  }
+
+  .cta-section-wrapper {
+    flex-direction: column;
+    margin: 0 0;
+  }
+
+  .cta-section .col {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cta-section-wrapper .col:nth-child(1) {
+    width: 90%;
+  }
+  
+  .cta-section-wrapper .col:nth-child(2) {
+    width: 90%;
   }
 }
