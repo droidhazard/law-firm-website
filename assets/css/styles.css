@@ -1,3 +1,9 @@
+/* Main Font = Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+/* Heading Font = Merriweather */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,700&display=swap');
+
 :root {
   --grey-bg: #f6f6f6;
   --accent-main: #a79344;
@@ -8,10 +14,77 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
+}
+
+/* HERO SECTION */
+.hero-section {
+  /* padding: 140px 0; */
+  height: 100vh;
+  width: 100%;
+  line-height: 1.5;
+  padding: 0 140px;
+  background-image: url('../img/top-section.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero-section h2 {
+  color: var(--accent-main);
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+  font-size: 2rem;
+}
+
+.hero-section h1 {
+  color: #fff;
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+  font-size: 3rem;
+}
+
+.hero-section p {
+  color: #fff;
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+  font-size: 1rem;
+}
+
+.hero-section button {
+  padding: 15px 60px;
+  font-size: 1.1rem;
+  margin: 3rem 0;
+  border: 1px solid #000;
+  cursor: pointer;
+  background-color: var(--accent-main);
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.hero-section button:hover {
+  background-color: #fff;
+  color: var(--accent-main);
+}
+
+
+
+
+/* Responsiveness */
+@media (max-width: 896px) {
+  .hero-section {
+    padding: 0;
+    height: 60vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 3px 0px 7px rgba(11, 10, 5, 0.8), 
+	  -3px 0px 7px rgba(19, 17, 11, 0.8), 
+	  0px 4px 7px rgba(29, 25, 12, 0.8);
+  }
 }
