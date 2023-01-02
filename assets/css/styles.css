@@ -6,7 +6,9 @@
 
 :root {
   --grey-bg: #f6f6f6;
+  --blue-grey: #1b263b;
   --accent-main: #a79344;
+  --text-dark: #161616;
 }
 
 * {
@@ -61,9 +63,11 @@ h1 {
 .text-white {
   color: #fff;
 }
+
 .text-dark {
-  color: #161617;
+  color: var(--text-dark);
 }
+
 .text-grey {
   color: #6c6c6c;
 }
@@ -94,14 +98,23 @@ h1 {
   background-color: var(--accent-main);
 }
 
+.bg-grey {
+  background-color: var(--blue-grey);
+}
+
 .button:hover {
   background-color: #fff;
   color: var(--accent-main);
 }
 
+.bg-grey:hover {
+  background-color: var(--accent-main);
+  color: var(--blue-grey);
+}
+
 /* CTA SECTION */
 .cta-section {
-  background-color: #1b263b;
+  background-color: var(--blue-grey);
   padding: 20px 0;
   line-height: 2;
 }
@@ -127,13 +140,63 @@ h1 {
   padding: 20px 0;
   line-height: 2;
 }
+
 .third-section-wrapper {
   margin: 0 100px;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
+.third-section-wrapper .col:nth-child(1) {
+  width: 50%;
+}
+
+.third-section-wrapper .col:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+ul.features {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+ul.features li {
+  list-style: none;
+  letter-spacing: 1px;
+}
+
+ul.features i {
+  font-size: 2rem;
+  margin: 5px;
+  color: #a5612a;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.signature {
+  height: 50px;
+}
+
+.lawyer {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
 
 
 
@@ -162,11 +225,28 @@ h1 {
     justify-content: center;
     align-items: center;
   }
+
   .cta-section-wrapper .col:nth-child(1) {
     width: 90%;
   }
-  
+
   .cta-section-wrapper .col:nth-child(2) {
     width: 90%;
+  }
+  .third-section-wrapper {
+    flex-direction: column;
+    margin: 0 0;
+  }
+  .third-section-wrapper .col:nth-child(1) {
+    margin: 0 10px;
+    width: 100%;
+  }
+
+  .third-section-wrapper .col:nth-child(2) {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+    gap: 20px;
   }
 }
