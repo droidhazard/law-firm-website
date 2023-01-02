@@ -61,6 +61,20 @@ h1 {
 .text-white {
   color: #fff;
 }
+.text-dark {
+  color: #161617;
+}
+.text-grey {
+  color: #6c6c6c;
+}
+
+.text-accent {
+  color: var(--accent-main);
+}
+
+.text-italic {
+  font-style: italic;
+}
 
 .text-thin {
   font-weight: 300;
@@ -106,6 +120,18 @@ h1 {
 
 .cta-section-wrapper .col:nth-child(2) {
   width: 30%;
+}
+
+/* THIRD SECTION */
+.third-section {
+  padding: 20px 0;
+  line-height: 2;
+}
+.third-section-wrapper {
+  margin: 0 100px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 
